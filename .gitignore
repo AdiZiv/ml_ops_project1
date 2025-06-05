@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg
+*.egg-info/
+dist/
+build/
+MLOps_venv/
+.env/
+.envrc
+*.sqlite3
+
+# VSCode
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Jupyter
+.ipynb_checkpoints/
+
+# data
+data/
