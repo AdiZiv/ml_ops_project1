@@ -16,6 +16,23 @@ Notes:
 -	Try to write the script as OOP as your can (split to different classes and funcs)
 -	Make the script Flexible to changes  (new model, new data source) 
 
+
+=====================================================
+
+Missing Requirements:
+Command-line arguments for input/output files - currently hardcoded in config.py
+No explicit error handling visible in the code
+No logging mechanism visible
+Suggestions for Improvement:
+Add command-line argument parsing to make input/output files configurable at runtime
+Add proper error handling and logging
+Add input validation for the dataset
+Add docstrings and type hints for better code documentation
+Consider adding a proper logging mechanism
+Would you like me to help you implement any of these improvements to better meet the requirements?
+
+=====================================================
+
 step #2: Dockerize the Solution
 Containerize the entire batch processing pipeline using Docker. You'll create a Dockerfile that:
 

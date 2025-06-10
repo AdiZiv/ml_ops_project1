@@ -4,14 +4,17 @@ FROM python:3.8-slim
 # Set the working directory in the container
 WORKDIR /app
 
-# Copy the current directory contents into the container at /app
+# Create necessary directories
+RUN mkdir -p /app/data /app/models /app/output
+
+# Copy requirements first to leverage Docker cache
 COPY requirements.txt ./
 
 # Install any needed packages specified in requirements.txt
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copy the rest of your app's source code from your host to your image filesystem.
-COPY model_predict.py .
+# Copy the entire project
+COPY . .
 
-# Run your_script.py when the container launches
-CMD ["python", "./model_predict.py"]
+# Run the main script when the container launches
+CMD ["python", "main.py"]
