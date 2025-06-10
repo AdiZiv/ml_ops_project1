@@ -1,14 +1,15 @@
-
-FILE_PATH = 'data/bike sharing train.csv'
+FILE_PATH = 'data/database_input.csv'
 
 
 # Transofrm
-
+FILLNA_TOTALCHARGES = 2279
+FILLNA_TOTALCHARGES_STR = '2279'
+FILLNA_PhoneService = 'No'
 
 # model
-MODEL_CASUAL_PATH = 'models/model_casual.pkl'
-MODEL_REGISTERED_PATH = 'models/model_registered.pkl'
-MODEL_COLUMNS = ['year','month','hour_x','hour_y','temp','humidity','windspeed']
+MODEL_PATH = 'models/churn_model.pickle'
+MODEL_COLUMNS = ['TotalCharges','Month-to-month','One year','Two year','PhoneService','tenure']
 
 # load
-RESULT_FILE_PATH = 'datg/result.csv'
+RESULT_FILE_PATH = 'data/result.csv'
+
